@@ -200,13 +200,15 @@ ISKO OPEN KARO
 </div>
 
 <script>
+  document.getElementById("page2").style.display="none";
+document.getElementById("page3").style.display="none";
 
 /* page switch */
 
 function openPage2(){
-document.getElementById("page1").classList.remove("active")
-document.getElementById("page2").classList.add("active")
-startTyping()
+document.getElementById("page1").style.display="none";
+document.getElementById("page2").style.display="flex";
+startTyping();
 }
 
 /* typing text */
@@ -303,5 +305,6 @@ document.body.appendChild(conf)
 </body>
 
 </html>
+
 
 
